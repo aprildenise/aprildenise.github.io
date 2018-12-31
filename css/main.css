@@ -1,21 +1,31 @@
+
+/* Main body */
 body {
     margin: 60px auto;
     width: 70%;
 }
-navbar ul, footer ul {
+
+/* Navigation bar */
+nav ul, footer ul {
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
-    padding: 0px;
+    text-align: center;
     list-style: none;
     font-weight: bold;
 }
-navbar ul li, footer ul li {
+
+/* Links in the navigation bar */
+nav ul li, footer ul li {
     display: inline;
     margin-right: 20px;
 }
+
+/* All links */
 a {
     text-decoration: none;
     color: #999;
 }
+
+/* All links on hover */
 a:hover {
     text-decoration: underline;
 }
