@@ -9,52 +9,52 @@
   <link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
   <script>
     var prev = null;
-function initPrev() {
-  prev = document.getElementById("aboutDIV");
-}
 
-function onAboutClick() {
-  var x = document.getElementById("aboutDIV");
-  if (prev === null) {
-    prev = x;
-  }
-  if (prev !== x) {
-    prev.style.display = "none";
-  }
-  if (x.style.display === "none") {
-    x.style.display = "block";
-  }
-  prev = x;
-}
+    function initPrev() {
+      prev = document.getElementById("aboutDIV");
+    }
 
-function onLinksClick() {
-  var x = document.getElementById("linksDIV");
-  if (prev === null) {
-    prev = x;
-  }
-  if (prev !== x) {
-    prev.style.display = "none";
-  }
-  if (x.style.display === "none") {
-    x.style.display = "block";
-  }
-  prev = x;
-}
+    function onAboutClick() {
+      var x = document.getElementById("aboutDIV");
+      if (prev === null) {
+        prev = x;
+      }
+      if (prev !== x) {
+        prev.style.display = "none";
+      }
+      if (x.style.display === "none") {
+        x.style.display = "block";
+      }
+      prev = x;
+    }
 
-function onProjectsClick() {
-  var x = document.getElementById("projectsDIV");
-  if (prev === null) {
-    prev = x;
-  }
-  if (prev !== x) {
-    prev.style.display = "none";
-  }
-  if (x.style.display === "none") {
-    x.style.display = "block";
-  }
-  prev = x;
-}
+    function onLinksClick() {
+      var x = document.getElementById("linksDIV");
+      if (prev === null) {
+        prev = x;
+      }
+      if (prev !== x) {
+        prev.style.display = "none";
+      }
+      if (x.style.display === "none") {
+        x.style.display = "block";
+      }
+      prev = x;
+    }
 
+    function onProjectsClick() {
+      var x = document.getElementById("projectsDIV");
+      if (prev === null) {
+        prev = x;
+      }
+      if (prev !== x) {
+        prev.style.display = "none";
+      }
+      if (x.style.display === "none") {
+        x.style.display = "block";
+      }
+      prev = x;
+    }
   </script>
 </head>
 
@@ -78,23 +78,28 @@ function onProjectsClick() {
     <div class="container">
       <ul>
         <div id="aboutDIV">
-          <img src="https://scontent.fewr1-4.fna.fbcdn.net/v/t1.0-9/33094421_266501517228588_7616171446213017600_n.jpg?_nc_cat=104&_nc_ht=scontent.fewr1-4.fna&oh=0b0e75f33f946114f5b4c9e101e28fed&oe=5C8C5091" height="250" align="left" border = "4px"></img>
-        <p>Hey, there!</p>
-        I'm April, an enthusiastic gamer, and artist! I specialize in software development, and most importantly, video game design. I enjoy telling stories through video games, so I generally put my Computer Science skills into video game development and animation on my free time!
-        <br>
-        <br>
-        other interests include: video games, art, west coast swing dancing, and green tea
-        
-        <br>
-        <br>
-        <a href = "https://drive.google.com/file/d/1QzneYpvVT0AE-xDdZS4-1sBOxIjC1Gf7/view?usp=sharing" download>Click here for my resume.</a>
-        
+          <img src="https://scontent.fewr1-4.fna.fbcdn.net/v/t1.0-9/33094421_266501517228588_7616171446213017600_n.jpg?_nc_cat=104&_nc_ht=scontent.fewr1-4.fna&oh=0b0e75f33f946114f5b4c9e101e28fed&oe=5C8C5091" height="250" align="left"></img>
+          <p>Hey, there!</p>
+          I'm April, an enthusiastic gamer, and artist! I specialize in software development, and most importantly, video game design. I enjoy telling stories through video games, so I generally put my Computer Science skills into video game development and animation
+          on my free time!
+          <br>
+          <br> other interests include: video games, art, west coast swing dancing, and green tea
+
+          <br>
+          <br>
+          <a href="https://drive.google.com/file/d/1QzneYpvVT0AE-xDdZS4-1sBOxIjC1Gf7/view?usp=sharing" download>Click here for my official resume.</a>
+
         </div>
         <div id="linksDIV" style="display:none">
-          This is another one
+          <p>Come find me on other platforms!</p>
+          Email: aprild.m.dizon@gmail.com
+          <br> Official resume: <a href="https://drive.google.com/file/d/1QzneYpvVT0AE-xDdZS4-1sBOxIjC1Gf7/view?usp=sharing" download>Download link</a>
+          <br> Github: <a href="https://github.com/aprildenise">github.com/aprildenise</a>
+          <br> Facebook: <a href="https://www.facebook.com/april.dizon.775">@April Dizon</a>
+          <br> Twitter: <a href="https://twitter.com/march_mayjune">@march_mayjune</a>
         </div>
         <div id="projectsDIV" style="display:none">
-          projects are here!
+          !Currently under construction!
         </div>
 
       </ul>
