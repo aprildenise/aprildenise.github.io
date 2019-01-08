@@ -10,6 +10,7 @@
 /* Main body */
 body {
   width: auto;
+  height: auto;
   background-color: var(--bodyColor);
 }
 
@@ -141,19 +142,20 @@ content {
   font-family: "Montserrat", sans-serif;
   position: fixed;
   width: 100%;
-  top: 35%;
+  top: 21%;
   left: 0;
   height: 70%;
   overflow: auto;
+  margin-top: 5%;
 
 }
 
 content ul {
-  position: absolute;
   width: 75%;
   left: 9.3%;
   letter-spacing: 2px;
   line-height: 25px;
+  padding-left: 12%;
 }
 
 img{
@@ -183,8 +185,10 @@ h1 {
 }
 p {
   font-size: 1.5em;
-  line-height: 1.4em;
+  line-height: 1em;
   color: #333;
+  font-weight: bold;
+  position: static
 }
 
 ul.posts {
