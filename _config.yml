@@ -4,7 +4,7 @@ gems:
   - jekyll-paginate
 
 # Site settings
-title: "April"
+title: "march...may...june"
 description: > # this means to ignore newlines until "email:"
    A blog for my Intro to Multimedia Composition class!
 
@@ -17,13 +17,13 @@ float_logo: true # true, false (default)
 cover: "/assets/images/header1.jpg"
 
 name: 'April Dizon'
-author: 'Dirk Fabisch for template'
-author_image: "/assets/images/sunnythebunny"
+author: 'April Dizon'
+author_image: "/assets/images/sunnythebunny.jpg"
 
 paginate:	5
 
-url: "http://myblog.***.***" # the base hostname & protocol for your site
-baseurl: ""
+url: "aprildenise.github.io/english209/" # the base hostname & protocol for your site
+baseurl: 
 #used to display twitter cards
 twitter_handle: #
 
