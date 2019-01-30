@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>April</title>
+  <!-- link to main stylesheet -->
+  <link rel="stylesheet" type="text/css" href="/css/personalmain.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
+  <script>
+    var prev = null;
+
+    function initPrev() {
+      prev = document.getElementById("aboutDIV");
+    }
+
+    function onAboutClick() {
+      var x = document.getElementById("aboutDIV");
+      if (prev === null) {
+        prev = x;
+      }
+      if (prev !== x) {
+        prev.style.display = "none";
+      }
+      if (x.style.display === "none") {
+        x.style.display = "block";
+      }
+      prev = x;
+    }
+
+    function onLinksClick() {
+      var x = document.getElementById("linksDIV");
+      if (prev === null) {
+        prev = x;
+      }
+      if (prev !== x) {
+        prev.style.display = "none";
+      }
+      if (x.style.display === "none") {
+        x.style.display = "block";
+      }
+      prev = x;
+    }
+
+    function onProjectsClick() {
+      var x = document.getElementById("projectsDIV");
+      if (prev === null) {
+        prev = x;
+      }
+      if (prev !== x) {
+        prev.style.display = "none";
+      }
+      if (x.style.display === "none") {
+        x.style.display = "block";
+      }
+      prev = x;
+    }
+  </script>
+</head>
+
+<body onLoad="initPrev()">
+  <nav>
+    <ul>
+      <li><button onclick="onAboutClick()" class="link">Home</button>
+      </li>
+      <li><button onclick="onAboutClick()" class="link">About</button>
+      </li>
+      <li><button onclick="onLinksClick()" class="link">Links</button>
+      </li>
+      <li><button onclick="onProjectsClick()" class="link">Projects</button>
+      </li>
+    </ul>
+  </nav>
+  <logo>April<br>Dizon</logo>
+  <accent></accent>
+  <icon></icon>
+  <content>
+    <div class="container">
+      <ul>
+        <div id="aboutDIV">
+          <!--
+          <img src="https://scontent.fewr1-4.fna.fbcdn.net/v/t1.0-9/33094421_266501517228588_7616171446213017600_n.jpg?_nc_cat=104&_nc_ht=scontent.fewr1-4.fna&oh=0b0e75f33f946114f5b4c9e101e28fed&oe=5C8C5091" height="250" align="left"></img>
+          -->
+          <p>Hey, there!</p>
+          I'm April, an enthusiastic gamer, and artist! I specialize in software development, and most importantly, video game design. I enjoy telling stories through video games, so I generally put my Computer Science skills into video game development and animation
+          on my free time!
+          <br>
+          <br> other interests include: video games, illustration, animation, west coast swing dancing, and green tea
+
+          <br>
+          <br>
+          <a href="https://drive.google.com/file/d/1YGVRb_OhUPImW-r_r5KHPDSPZS7cr0t6/view?usp=sharing" download target="_blank">Click here for my official resume.</a>
+        
+          <p>Education</p>
+          <b>Currently studing at Rutgers University, New Brunswick</b>
+          <li>Pursuing BS in Computer Science, graduating in 2020</li>
+          <li>GPA: 3.5/4.0</li>
+          <li>Relevant Coursework: Intro to Computer Science, Data Structures, Computer Architecture, Systems Programming, Algorithms, Principles of Information and Data Management, Discrete Structures 1, Discrete Structures 2</li>
+        
+          <p>Skills</p>
+          <b>Languages</b>
+          <li>Proﬁcient in: C#, Java, Python, C, SQL</li>
+          <li>Familiar with: HTML, CSS, MongoDB</li>
+          <b>Tools and Frameworks</b>
+          <li>Unity, Flask, Angular, NodeJS, Bash</li>
+        
+          <p>Experience and Leadership</p>
+          <b>Aresty Research Program - Research Assistant</b>
+          <li>At Rutgers University, New Brunswick</li>
+          <li>Started Sept. 2018 - Present, with 12 hours/week</li>
+          <li>Implementing new algorithms with a small research team in order to introduce semantics and human feeling into pathﬁnding</li>
+          <li>Responsible for coding more than 50 agents in a 3D environment using old and new pathﬁnding techniques that optimizes time and space</li>
+          <li>Tools used: C#, Unity, Microsoft Visual Studio 2017, Microsoft Visual Code</li>
+          <li><a href="https://github.com/aprildenise/Semantic-Pathfinding" target="_blank">Click here for the github repo</a></li>
+        
+          <br>
+        
+          <b>Rutgers Swing Dance Team - Treasurer</b>
+          <li>At Rutgers University, New Brunswick</li>
+          <li>Started Sept 2017 - Present, with 8 hours/week</li> 
+          <li>Manages over $3000 used to take members to out-of-state competitions, hire coaches, and overall improve the team’s dancing</li>
+          <li>Uses the team’s ﬁnancial standings and needs to help coordinate the team’s activities</li>
+          
+          <br>
+        
+          <b>USACS Mentorship Program - Mentor</b>
+          <li>At Rutgers University, New Brunswick</li>
+          <li>Started Sept 2018 - Present, with 2 hours/week</li>
+          <li>Oﬀers guidance to lowerclassmen about course, major, and extra curricular recommendations</li>
+          <li>Tutors students about fundamental computer science concepts, such as data structures and algorithms</li>
+        
+          <br>
+
+        </div>
+        <div id="linksDIV" style="display:none">
+          <p>Come find me on other platforms to see what else I do!</p>
+          Email: aprild.m.dizon@gmail.com
+          <br> Official resume: <a href="https://drive.google.com/file/d/1YGVRb_OhUPImW-r_r5KHPDSPZS7cr0t6/view?usp=sharing" download target="_blank">Download link</a>
+          <br> Github: <a href="https://github.com/aprildenise" target="_blank">github.com/aprildenise</a>
+          <br> Twitter: <a href="https://twitter.com/march_mayjune" target="_blank">@march_mayjune</a>
+          <br> Tumblr: <a href="https://marchmayjune.tumblr.com/" target="_blank">@march_mayjune</a>
+        </div>
+        <div id="projectsDIV" style="display:none">
+          
+          <p>Semantic Pathfinding</p>
+          <b>My research as a Research Assistant under the Rutgers Aresty Program!</b>
+          <li>At Rutgers University, New Brunswick</li>
+          <li>Started Sept. 2018 - Present, with 12 hours/week</li>
+          <li>Implementing new algorithms with a small research team in order to introduce semantics and human feeling into pathﬁnding</li>
+          <li>Responsible for coding more than 50 agents in a 3D environment using old and new pathﬁnding techniques that optimizes time and space</li>
+          <li>Tools used: C#, Unity, Microsoft Visual Studio 2017, Microsoft Visual Code</li>
+          <li><a href="https://github.com/aprildenise/Semantic-Pathfinding" target="_blank">Click here for the github repo</a></li>
+
+          <p>Beer-TAP</p>
+          <b>Web application developed with a team of 3 that organizes and refines mock data about bars into various graphs</b>
+          <li>At Rutgers University, New Brunswick</li>
+          <li>Started Oct - Dec 2018</li>
+          <li>Performed queries and operations on over 5000 rows of data in a relation database in order to discover trends within the data</li>
+          <li>Tools used: Python, SQL, NodeJS, Angular, HTML, CSS, Microsoft Visual Code</li>
+          <li><a href="https://github.com/aprildenise/tjgiarrusso.github.io" target="_blank">Click here for the github repo</a></li>
+
+          <p>Burn</p>
+          <b>A game about burning things</b>
+          <li>Started Dec 2018</li>
+          <li>Ambient 2D game about burning objects in a forest that uses original animation</li>
+          <li>Implemented a terrain that inﬁnitely generates the world wherever the player chooses to go</li>
+          <li>Tools used: C#, Unity, Microsoft Visual Studio 2017, Microsoft Visual Code</li>
+          <li><a href="https://github.com/aprildenise/Semantic-Pathfinding" target="_blank">Click here for the github repo</a></li>
+
+          <p>Friends</p>
+          <b>Role-playing game currently being built with a group of two</b>
+          <li>Started Sept 2018 - Present</li>
+          <li>Developing all original animations, mechanics, and plot</li>
+          <li>Formulating and coding an intuitive battle mechanic that oﬀers the player a diverse system to experiment with</li>
+          <li>Tools used: C#, Unity, Microsoft Visual Studio 2017, Microsoft Visual Cod</li>
+
+          <p>URL-Shortener</p>
+          <b>Web application that takes a long URL and condenses it for the convenience of the use</b>
+          <li>Started Jun 2017 - Aug 2017</li>
+          <li>Constructed a relational database where URLS are stored in and retrieved from for continuous use</li>
+          <li>Tools used: Python, Flask, SQL, Cloud9</li>
+          <li><a href="https://github.com/aprildenise/URL-Shortener" target="_blank">Click here for the github repo</a></li>
+
+          <p>Flower Pot</p>
+          <b>Texted-based farming simulation game in Java</b>
+          <li>Started June 2017</li>
+          <li>Utilized multi-threading to handle multiple commands from the use</li>
+          <li>Tools used: Eclipse, Java</li>
+          <li><a href="https://github.com/aprildenise/Flower-Pot" target="_blank">Click here for the github repo</a></li>
+
+          <p>Expression Evaluator</p>
+          <b>Algebraic calculator that evaluates expressions containing multiple variables and diﬀerent operators</b>
+          <li>At Rutgers University, New Brunswick</li>
+          <li>Started Feb - Apr 2017</li>
+          <li>Used common data structures, like the stack and array lists, to simplify the expression and evaluate it</li>
+          <li>Tools used: Eclipse, Java</li>
+
+          <p>More to come! Check out <a href="https://github.com/aprildenise" target="_blank">my github</a> for others not listed here.</p>
+          <br>
+        </div>
+      </ul>
+    </div>
+  </content>
+</body>
+
+</html>
