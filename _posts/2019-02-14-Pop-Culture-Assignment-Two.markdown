@@ -4,7 +4,7 @@ title:  "Pop Culture Assignment - Part 1: Gillette"
 date:   2019-02-14
 categories: blog
 tags:
-image: /assets/images/gillette.PNG
+image: /assets/images/gillette.png
 ---
 
 <h2>Hey there, again! There are my opinions about the infamous Gillette commercial:</h2>

@@ -4,7 +4,7 @@ title:  "Pop Culture Assignment - Part 1: Celebrities"
 date:   2019-02-14
 categories: blog
 tags:
-image: /assets/images/gamegrumps.JPG
+image: /assets/images/gamegrumps.jpg
 ---
 
 <h2>Hello there! Take a look at who I think is a good role model today:</h2>

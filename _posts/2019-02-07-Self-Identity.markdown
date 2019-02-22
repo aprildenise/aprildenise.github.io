@@ -4,7 +4,7 @@ title:  "Self-Identity"
 date:   2019-02-07
 categories: blog
 tags:
-image: /assets/images/selfidentity.PNG
+image: /assets/images/selfidentity.png
 driveID: 1uqYKQ7SJwUccY4HQH-HFNhBNu-1uyo9U/preview
 ---
 
