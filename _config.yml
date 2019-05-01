@@ -6,11 +6,11 @@ gems:
 # Site settings
 title: "April Dizon"
 description: > # this means to ignore newlines until "email:"
-   A blog for my Intro to Multimedia Composition class!
+   A blog for my Creative Writing (Intro to Multimedia Composition) class!
 
 email: 
 #blog logo
-logo: "/assets/images/sunnythebunny.jpg"
+logo: "/assets/images/april.png"
 float_logo: true # true, false (default)
 
 # blog cover
@@ -18,7 +18,7 @@ cover: "/assets/images/header1.jpg"
 
 name: 'April Dizon'
 author: 'April Dizon'
-author_image: "/assets/images/sunnythebunny.jpg"
+author_image: "/assets/images/april.png"
 
 paginate:	5
 

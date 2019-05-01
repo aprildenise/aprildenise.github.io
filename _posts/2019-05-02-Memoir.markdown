@@ -1,0 +1,8 @@
+---
+layout: post
+title:  "3 Days"
+date:   2019-04-18
+categories: blog
+tags:
+image: /assets/images/home.JPG
+---
