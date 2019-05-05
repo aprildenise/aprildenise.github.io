@@ -9,6 +9,9 @@ image: /assets/images/rutgers.jpg
 
 It is a comedy skit I made about Rutgers University!
 
-[Here is a link to my podcast!][Video]
+<b>[Here is a link to my podcast!][Video]</b>
+
+It's also here to copy-and-paste:
+https://drive.google.com/open?id=1gsJpa65YokyawKTUpi1RQC8AQyCAx3Hg
 
 [Video]:https://drive.google.com/open?id=1gsJpa65YokyawKTUpi1RQC8AQyCAx3Hg
