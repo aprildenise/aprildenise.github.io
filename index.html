@@ -1,95 +1,262 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>April Denise D.</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-<div class="teaserimage">
-    <div class="teaserimage-image" {% if site.cover %}style="background-image: url({{ site.cover | prepend: site.baseurl }})"{% endif %}>
-        Teaser Image
-    </div>
-</div>
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
 
-<header class="blog-header">
-    {% if site.logo %}
-      <a class="blog-logo" href="{{site.url}}{{site.baseurl}}" style="background-image: url('{{ site.logo | prepend: site.baseurl }}')">{{ site.title }}</a>
-    {% endif %}
-    <h1 class="blog-title">{{ site.title }}</h1>
-    <h2 class="blog-description">{{ site.description }}</h2>
-    <div class="custom-links">
-      {% for social in site.social %}
-        {% if social.url %}
-            <a class="icon-{{ social.icon }}" href="{{ social.url }}" {% if social.desc %} title="{{ social.desc }}"{% endif %}">
-              <i class="fa fa-{{ social.icon }}"></i>
-            </a>
-            &nbsp;&nbsp;·&nbsp;&nbsp;
-        {% endif %}
-      {% endfor %}
-      <a href={{ "/about/" | prepend: site.baseurl }}>About</a>
-    </div>
-</header>
-
-
-<main class="content" role="main">
-
-    {% if site.tags.featured %}
-    <h5 class="index-headline featured"><span>Featured</span></h5>
-
-    <div class="container featured">
-      {% for post in site.tags.featured %}
-        <article class="post" itemscope itemtype="http://schema.org/BlogPosting" role="article">
-          <div class="article-item">
-            <header class="post-header">
-              <h2 class="post-title" itemprop="name"><a href="{{ post.url | prepend: site.baseurl }}" itemprop="url">{{ post.title }}</a></h2>
-            </header>
-            <section class="post-excerpt" itemprop="description">
-              <p>{{ post.content | strip_html | truncatewords: 50 }}</p>
-            </section>
-            <div class="post-meta">
-              <time datetime="{{ post.date | date_to_long_string }}">{{ post.date | date_to_long_string }}</time>
-  <!--            <span class="post-tags-set">on {{#foreach tags}}<span class="post-tag-{{slug}}">{{#if @first}}{{else}}, {{/if}}<a href="/tag/{{slug}}">{{name}}</a></span>{{/foreach}}</span>-->
-            </div>
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+  </head>
+  <body>
+    <nav>
+      <div class="bar">
+        <div class="container">
+          <div class="navLogo left">
+            April <br />
+            Denise D.
           </div>
-        </article>
-      {% endfor %}
-    </div>
-
-    <h5 class="index-headline normal"><span>Regular</span></h5>
-    {% endif %}
-
-    <div class="cf frame">
-      {% for post in paginator.posts %}
-        <article class="post" itemscope itemtype="http://schema.org/BlogPosting" role="article">
-          <div class="article-item">
-            <header class="post-header">
-              <h2 class="post-title" itemprop="name"><a href="{{ post.url | prepend: site.baseurl }}" itemprop="url">{{ post.title }}</a></h2>
-            </header>
-            <section class="post-excerpt" itemprop="description">
-              <p>{{ post.excerpt | strip_html | truncatewords: 50 }}</p>
-            </section>
-            <div class="post-meta">
-              <time datetime="{{ post.date | date_to_long_string }}">{{ post.date | date_to_long_string }}</time>
-<!--            <span class="post-tags-set">on {{#foreach tags}}<span class="post-tag-{{slug}}">{{#if @first}}{{else}}, {{/if}}<a href="/tag/{{slug}}">{{name}}</a></span>{{/foreach}}</span>-->
-            </div>
+          <div class="navLinkContainer right">
+            <a href="#ABOUT">About</a>
+            <a href="#LINKS">Links</a>
+            <a href="#PROJECTS">Projects</a>
+            <a href="#ACTIVITY">Activity</a>
           </div>
-        </article>
-      {% endfor %}
-    </div>
-
-    <nav class="pagination" role="navigation">
-      {% if paginator.next_page %}
-        <a class="newer-posts" href={{ "/page" | prepend: site.baseurl | append: paginator.next_page }}>&larr; Older posts</a>
-      {% endif %}
-      <span class="page-number">Page {{ paginator.page }} of {{ paginator.total_pages }}</span>
-      {% if paginator.previous_page %}
-        {% if paginator.page == 2 %}
-          <a class="older-posts" href={{ "/" | prepend: site.baseurl }}>Newer posts &rarr;</a>
-        {% else %}
-          <a class="older-posts" href={{ "/page" | prepend: site.baseurl | append: paginator.previous_page }}>Newer posts &rarr;</a>
-        {% endif %}
-      {% endif %}
+        </div>
+      </div>
     </nav>
 
+    <header>
+      <img
+        src="https://cdn.glitch.com/c0d074a0-0266-41a6-b342-880a495b9229%2Fheader-cropped.png?v=1577584018221"
+        alt="Pink Header Image"
+      />
 
-    <!-- {{!! After all the posts, we have the previous/next pagination links }}
-    {{pagination}} -->
+      <span class="headerText centered" id="ABOUT">
+        <h1>
+          Hi! My name is April Denise Dizon, a student at Rutgers University
+          about to complete my BS in computer science. I'm also a software
+          engineer, and an indie video game designer with an interest in AI and
+          backend development.
+        </h1>
+      </span>
+    </header>
 
-</main>
+    <div class="section content">
+      In the previous years, I’ve completed AI pathfinding research under the
+      Rutgers Aresty Undergraduate Research Program. Now, I’m designing apps and
+      software solo, with my biggest project being a bullet hell game made with
+      Unity and C#. Through my solo development, I’ve learned to wear many hats
+      – studying outer disciplinary concepts like visual effects and marketing.
+      <br /><br />
+      My favorite projects are those where I can combine game design and
+      computer science theories to build software that is both convenient and
+      fun experiences for users. I believe that outstanding user experiences
+      aren’t just from the UI and UX designs, but from a robust and clean
+      backend system as well.
+      <br /><br />
+      Outside of the technical background, I am also a dancer with training in
+      ballet, ballroom, and west coast swing, and a self-taught illustrator!
+      <br /><br />
+      I’m available for both full-time and part-time work. Contact me at my
+      email below for any inquiries at all. Thanks for visiting!
+    </div>
+
+    <div class="section content centered" id="LINKS">
+      <h2>
+        Links
+      </h2>
+      <br />
+      Email 📧
+      <a href="mailto:admdizonn@gmail.com?Subject=Hello" target="_top"
+        >admdizonn@gmail.com</a
+      ><br />
+      Github 🖥️ <a href="https://github.com/aprildenise">@aprildenise</a
+      ><br />Glitch ⚙️<a href="https://glitch.com/@aprildenise">@aprildenise</a
+      ><br />
+      Twitter 🐦 <a href="https://twitter.com/march_mayjune">@march_mayjune</a
+      ><br />Itch.io 🎮
+      <a href="https://marchmayjune.itch.io/">@marchmayjune</a>
+    </div>
+
+    <div class="section content centered" id="PROJECTS">
+      <h2>
+        Featured Projects
+      </h2>
+      <div class="boxContainer">
+        <br />
+        <div class="box">
+          <img
+            src="https://cdn.glitch.com/c0d074a0-0266-41a6-b342-880a495b9229%2Fvisitor%20crowd.png?v=1583207442335"
+            alt="Semantic Pathfinding Screenshot"
+          />
+          <img
+            src="https://cdn.glitch.com/c0d074a0-0266-41a6-b342-880a495b9229%2Fzones%20-%20side.png?v=1583207500040"
+            alt="Semantic Pathfinding Screenshot"
+          />
+          <div class="caption">
+            <a
+              href="https://github.com/aprildenise/Semantic-Pathfinding-Backups"
+              >Semantic pathfinding</a
+            >
+            is an algorithm I developed in my research, alongside a team of six
+            under the Rutgers Aresty Undergrad Research Program. It's created by
+            combing the techniques of hierarchical pathfinding, A*, and
+            influence maps.
+          </div>
+        </div>
+        <div class="box">
+          <img
+            src="https://cdn.glitch.com/c0d074a0-0266-41a6-b342-880a495b9229%2Fday3.gif?v=1583205421963"
+            alt="Bullet hell"
+          />
+          <div class="caption">
+            This unnamed
+            <a href="https://github.com/aprildenise/bullethell-game"
+              >Bullet hell game</a
+            >
+            is my current personal project, where I'm creating a video game in
+            100 Days, following the #100DaysOfGameDev challenge.
+          </div>
+        </div>
+        <div class="box">
+          <img
+            src="https://cdn.glitch.com/c0d074a0-0266-41a6-b342-880a495b9229%2Fnotes%20on%20crying%20cries.gif?v=1583205768577"
+            alt="Shoot 'em up game'"
+          />
+          <div class="caption">
+            This
+            <a href="https://github.com/aprildenise/shootemup-game"
+              >shoot 'em up</a
+            >
+            game, named
+            <a href="https://marchmayjune.itch.io/notes-on-crying"
+              >notes on crying</a
+            >
+            is my first finished game and a personal project, inspired by the
+            need for more mental health themed games in the industry.
+          </div>
+        </div>
+        <div class="box">
+          <img
+            src="https://cdn.glitch.com/c0d074a0-0266-41a6-b342-880a495b9229%2FScreenshot%20(229).png?v=1583205744193"
+            alt="Puzzle Maker"
+          />
+          <div class="caption">
+            <b>Puzzle Maker</b> is an academic project developed in a pair that
+            can generate a puzzle by random, solve the puzzle through
+            pathfinding algorithms, build harder problems through genetic and
+            hill climbing algorithm, and evaluate the overall performance of the
+            AI.
+          </div>
+        </div>
+        <div class="box">
+          <img
+            src="https://cdn.glitch.com/c0d074a0-0266-41a6-b342-880a495b9229%2FScreenshot%20(230).png?v=1583206008990"
+            alt="Song Library"
+          />
+          <div class="caption">
+            <b>Song Library</b> is a simple academic project implemented in a
+            pair. With Java and JavaFX, the user can add, delete, and edit songs
+            into an organized song library.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="content section centered" id="ACTIVITY">
+      <h2>
+        Activity
+      </h2>
+      <div class="box">
+        <blockquote class="twitter-tweet">
+          <p lang="en" dir="ltr">
+            Finally, double digits: Day 10 of
+            <a
+              href="https://twitter.com/hashtag/100daysofGameDev?src=hash&amp;ref_src=twsrc%5Etfw"
+              >#100daysofGameDev</a
+            >
+            👩‍💻🔥 I&#39;ve been chipping away at coding and designing level 1
+            every now and then as I juggle schoolwork! I found out I needed to
+            rework my code architecture 😤 Let me show how it looks now:<a
+              href="https://twitter.com/hashtag/gamedev?src=hash&amp;ref_src=twsrc%5Etfw"
+              >#gamedev</a
+            >
+            <a
+              href="https://twitter.com/hashtag/indiedev?src=hash&amp;ref_src=twsrc%5Etfw"
+              >#indiedev</a
+            >
+            <a href="https://t.co/S8rR1uBG62">pic.twitter.com/S8rR1uBG62</a>
+          </p>
+          &mdash; april (@march_mayjune)
+          <a
+            href="https://twitter.com/march_mayjune/status/1233503540926144512?ref_src=twsrc%5Etfw"
+            >February 28, 2020</a
+          >
+        </blockquote>
+        <script
+          async
+          src="https://platform.twitter.com/widgets.js"
+          charset="utf-8"
+        ></script>
+
+        <div class="box">
+          <blockquote class="twitter-tweet">
+            <p lang="en" dir="ltr">
+              It&#39;s Day 09 of my
+              <a
+                href="https://twitter.com/hashtag/100daysofgamedev?src=hash&amp;ref_src=twsrc%5Etfw"
+                >#100daysofgamedev</a
+              >! No pic this time! I&#39;ve been coding some tools that&#39;ll
+              help me map out the levels more easily. Tho, I haven&#39;t figured
+              out what the level looks like yet 😅 I&#39;m definitely more of a
+              programmer than a designer<a
+                href="https://twitter.com/hashtag/gamedev?src=hash&amp;ref_src=twsrc%5Etfw"
+                >#gamedev</a
+              >
+              <a
+                href="https://twitter.com/hashtag/indiedev?src=hash&amp;ref_src=twsrc%5Etfw"
+                >#indiedev</a
+              >
+            </p>
+            &mdash; april (@march_mayjune)
+            <a
+              href="https://twitter.com/march_mayjune/status/1225484233214439428?ref_src=twsrc%5Etfw"
+              >February 6, 2020</a
+            >
+          </blockquote>
+          <script
+            async
+            src="https://platform.twitter.com/widgets.js"
+            charset="utf-8"
+          ></script>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer bar">
+      <div class="left">
+        <b>April Denise D.</b>
+        <br />
+        software engineer // game developer // artist <br />
+        student
+      </div>
+      <div class="right">
+        <a href="mailto:admdizonn@gmail.com?Subject=Hello" target="_top"
+          >email</a
+        >
+        // <a href="https://github.com/aprildenise">github</a> //
+        <a href="https://marchmayjune.itch.io/">twitter</a>
+      </div>
+    </div>
+
+    <!-- include the Glitch button to show what the webpage is about and
+          to make it easier for folks to view source and remix -->
+    <div class="glitchButton" style="position:fixed;top:20px;right:20px;"></div>
+    <script src="https://button.glitch.me/button.js"></script>
+  </body>
+</html>

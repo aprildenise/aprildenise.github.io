@@ -1,0 +1,252 @@
+/* CSS files add styling rules to your content */
+
+:root {
+  --main: #F294A5;
+  --secondary: #731034;
+  --background: #F2F0F0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: helvetica, arial, sans-serif;
+  overflow-x: hidden;
+  color: var(--secondary);
+  background-color: var(--background);
+}
+
+h1 {
+  font-style: italic;
+  font-weight: bold;
+  line-height: 120%;
+  color: var(--background);
+}
+
+h2{
+}
+
+nav a {
+  text-decoration: none;
+  font-weight: bold;
+  color: var(--main);
+  -o-transition:.5s;
+  -ms-transition:.5s;
+  -moz-transition:.5s;
+  -webkit-transition:.5s;
+  transition:.5s;
+}
+
+nav a:hover{
+  color: var(--secondary);
+  -o-transition:.5s;
+  -ms-transition:.5s;
+  -moz-transition:.5s;
+  -webkit-transition:.5s;
+  transition:.5s;
+}
+
+
+img {
+  user-select: none;
+  -webkit-user-select: none;
+	-webkit-user-drag: none;
+	-webkit-app-region: no-drag;
+	cursor: default;
+}
+
+.centered {
+  text-align: center;
+}
+
+.bar {
+  height: 100%;
+  width: 100%;
+  display: inline-block;
+  position: relative;
+}
+
+nav {
+  background-color: var(--background);
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 128px;
+  position: fixed;
+  z-index: 990;
+}
+
+.navLogo {
+  color: var(--main);
+  font-size: 25px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.navLinkContainer {
+  word-spacing: 32px;
+  letter-spacing: 1px;
+}
+
+.left {
+  position: absolute;
+  width: 30%;
+  text-align: left;
+  float: left;
+  left: 10%;
+  bottom: 24%;
+}
+
+.right {
+  position: absolute;
+  width: 50%;
+  text-align: right;
+  float: right;
+  right: 10%;
+  bottom: 24%;
+}
+
+header {
+  position: relative;
+  width: 100%;
+  padding-top: 128px;
+  padding-bottom: 10px;
+  background-color: var(--main);
+}
+
+header img {
+  width: 50%;
+  height: auto;
+  display: block;
+  margin: 10px auto 10px auto;
+  position: relative;
+}
+
+header .headerText {
+  padding-left: 10%;
+  padding-right: 10%;
+  position: relative;
+  display: block;
+  margin: 0 auto 0 auto;
+}
+
+.section {
+  padding-left: 25%;
+  padding-right: 25%;
+}
+
+.content {
+  font-size: 20px;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  line-height: 1.3;
+}
+
+.content a {
+  text-decoration: none;
+  font-weight: bold;
+  color: var(--secondary);
+  -o-transition:.5s;
+  -ms-transition:.5s;
+  -moz-transition:.5s;
+  -webkit-transition:.5s;
+  transition:.5s;
+}
+
+.content a:hover{
+  color: var(--main);
+  -o-transition:.5s;
+  -ms-transition:.5s;
+  -moz-transition:.5s;
+  -webkit-transition:.5s;
+  transition:.5s;
+}
+
+.boxContainer {
+  text-align: center;
+}
+
+.box {
+  padding: 15%;
+  width: 80%;
+  display: inline-block;
+  padding: 2px;
+  margin-top: 15%;
+}
+
+.box img {
+  top: 0px;
+  width: 100%;
+  height: auto;
+}
+
+.box .text {
+  text-align: center;
+  width: 100%;
+  height: 200px;
+  margin-top: 3%;
+}
+
+.box .caption {
+  text-align: left;
+  font-size: 18px;
+}
+
+blockquote {
+  width: 500px;
+  display: block;
+}
+
+.footer {
+  font-size: 12px;
+  padding-top: 20%;
+  padding-bottom: 10%;
+}
+
+.footer a {
+  text-decoration: none;
+  font-weight: bold;
+  color: var(--secondary);
+  -o-transition:.5s;
+  -ms-transition:.5s;
+  -moz-transition:.5s;
+  -webkit-transition:.5s;
+  transition:.5s;
+}
+
+.footer a:hover{
+  color: var(--main);
+  -o-transition:.5s;
+  -ms-transition:.5s;
+  -moz-transition:.5s;
+  -webkit-transition:.5s;
+  transition:.5s;
+}
+
+
+@media (max-width: 850px) {
+  .box {
+  }
+}
+
+@media (max-width: 500px) {
+  .box {
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 400px) {
+  .navLogo {
+    font-size: 20px;
+  }
+
+  .section {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+}
