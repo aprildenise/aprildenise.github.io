@@ -18,42 +18,41 @@ body {
 }
 
 h1 {
-  font-style: italic;
   font-weight: bold;
   line-height: 120%;
   color: var(--background);
 }
 
-h2{
+h2 {
+  text-align: center;
 }
 
 nav a {
   text-decoration: none;
   font-weight: bold;
   color: var(--main);
-  -o-transition:.5s;
-  -ms-transition:.5s;
-  -moz-transition:.5s;
-  -webkit-transition:.5s;
-  transition:.5s;
+  -o-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
-nav a:hover{
+nav a:hover {
   color: var(--secondary);
-  -o-transition:.5s;
-  -ms-transition:.5s;
-  -moz-transition:.5s;
-  -webkit-transition:.5s;
-  transition:.5s;
+  -o-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
-
 
 img {
   user-select: none;
   -webkit-user-select: none;
-	-webkit-user-drag: none;
-	-webkit-app-region: no-drag;
-	cursor: default;
+  -webkit-user-drag: none;
+  -webkit-app-region: no-drag;
+  cursor: default;
 }
 
 .centered {
@@ -147,20 +146,26 @@ header .headerText {
   text-decoration: none;
   font-weight: bold;
   color: var(--secondary);
-  -o-transition:.5s;
-  -ms-transition:.5s;
-  -moz-transition:.5s;
-  -webkit-transition:.5s;
-  transition:.5s;
+  -o-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
-.content a:hover{
+.content a:hover {
   color: var(--main);
-  -o-transition:.5s;
-  -ms-transition:.5s;
-  -moz-transition:.5s;
-  -webkit-transition:.5s;
-  transition:.5s;
+  -o-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.content img {
+  top: 0px;
+  width: 100%;
+  height: auto;
 }
 
 .boxContainer {
@@ -208,22 +213,21 @@ blockquote {
   text-decoration: none;
   font-weight: bold;
   color: var(--secondary);
-  -o-transition:.5s;
-  -ms-transition:.5s;
-  -moz-transition:.5s;
-  -webkit-transition:.5s;
-  transition:.5s;
+  -o-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
-.footer a:hover{
+.footer a:hover {
   color: var(--main);
-  -o-transition:.5s;
-  -ms-transition:.5s;
-  -moz-transition:.5s;
-  -webkit-transition:.5s;
-  transition:.5s;
+  -o-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
-
 
 @media (max-width: 850px) {
   .box {

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>April Denise D.</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+  </head>
+  <body>
+    <nav>
+      <div class="bar">
+        <div class="container">
+          <div class="navLogo left">
+            April <br />
+            Denise D.
+          </div>
+          <div class="navLinkContainer right">
+            <a href="/index.html">Home</a>
+            <a href="#Pathfinding">Pathfinding</a>
+            <a href="#Bullet-Hell">Bullet-Hell</a>
+            <a href="#Shoot-em-up">Shoot-'em-up</a>
+            <a href="#Android">Android Chess</a>
+            <a href="#Song-Lib">Song-Library</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="section content" id="Pathfinding">
+      <div style="padding-top: 128px"></div>
+      <h2>
+        Semantic Pathfinding
+      </h2>
+      <div class="caption">
+        <a href="https://github.com/aprildenise/Semantic-Pathfinding-Backups"
+          >Semantic pathfinding</a
+        >
+        is an algorithm I developed in my research, alongside a team of six
+        under the Rutgers Aresty Undergrad Research Program. It's created by
+        combining the techniques of hierarchical pathfinding, A*, and influence
+        maps.
+        <br /><br />
+        The image below is the virtual environment made in Unity used for the
+        study. It's a model of a hospital building. Each colored area is
+        considered a "zone." I used zones to create higher level searches for
+        A*, which result in hierarchical pathfinding.
+        <br /><br />
+        <img
+          src="https://cdn.glitch.com/c0d074a0-0266-41a6-b342-880a495b9229%2Fzones%20-%20side.png?v=1583207500040"
+          alt="Semantic Pathfinding Screenshot"
+        />
+        <br /><br />
+        My case study was crowd congestion, which is displayed in this image
+        below. An influence map is placed in the environment to quantify crowds
+        in the environment. With this map, new values are added to each agent's
+        pathfinding calculations. Visually, this makes the environment look like a heat
+        map, with red areas being more favorable. The result is a pathfinding
+        algorithm that not only finds the shortest path, but one that also
+        considers the dynamic stimuli of the agents, like noise, crowds,
+        visibility, etc. The disadvantages of this implementation is efficiency
+        though, since the pathfinding algorithm re-calculates paths for the
+        entire environment at each frame.
+        <br /><br />
+        <img
+          src="https://cdn.glitch.com/c0d074a0-0266-41a6-b342-880a495b9229%2Fvisitor%20crowd.png?v=1583207442335"
+          alt="Semantic Pathfinding Screenshot"
+        />
+        <br /><br />
+        In retrospective, this was my first experience working with a large team
+        in a professional setting! The study was an overall success, despite the
+        efficiency errors in the code. I not became more proficient with Unity
+        and C#, but I also learned soft skills pivotal for any leader or team
+        player. 🤗
+      </div>
+    </div>
+
+    <div class="section content" id="Bullet-Hell">
+      <h2>
+        Untitled Bullet Hell Game
+      </h2>
+      This unnamed
+      <a href="https://github.com/aprildenise/bullethell-game"
+        >Bullet hell game</a
+      >
+      is my current personal project, where I'm creating a video game in 100
+      Days, following the #100DaysOfGameDev challenge. You can follow my journey
+      and see more progress on my Twitter, as my knowledge for game development
+      and Unity continues to expand. The below .gif is an implementation of the
+      bullets in Unity, with different bullet paths, timings, and directions.
+      It's one of my first contributions to the challenge! 🙌🏼
+      <br /><br />
+      <img
+        src="https://cdn.glitch.com/c0d074a0-0266-41a6-b342-880a495b9229%2Fday3.gif?v=1583205421963"
+        alt="Bullet hell"
+      />
+      <br /><br />
+      My fascination for the bullet hell genre comes from my love for the Touhou
+      series. Despite the difficulty of the series, their games have a way of
+      calming me down. 😎
+    </div>
+
+    <div class="section content" id="Shoot-'em-up">
+      <h2>
+        Shoot 'em Up Game
+      </h2>
+      This
+      <a href="https://github.com/aprildenise/shootemup-game">shoot 'em up</a>
+      game, named
+      <a href="https://marchmayjune.itch.io/notes-on-crying"
+        >notes on crying,</a
+      >
+      is my first finished game and a personal project, inspired by the need for
+      more mental health themed games in the industry. It's availble on itch.io
+      to play, following the links.
+      <br /><br />
+      I attempted to make the development as quick as possible so that I can
+      learn programming skills quickly and move onto another project. Specifically, it was done
+      in 4 days, doing all
+      the designing, artwork, animations, sounds, and programming by myself. 🤘🏼 Sadly, the lack of time resulted in messy code and little
+      polish. I did learn the importance of planning though. Now, I love mapping out the systems of a coding project,
+      jotting down what they
+      need and how they interact with one another. 🥰
+      <br /><br />
+      Below is a .gif of the main character in the game.
+      <br /><br />
+      <img
+        src="https://cdn.glitch.com/c0d074a0-0266-41a6-b342-880a495b9229%2Fnotes%20on%20crying%20cries.gif?v=1583205768577"
+        alt="Shoot 'em up game'"
+      />
+    </div>
+
+    <div class="section content" id="Android">
+      <h2>
+        Android Chess
+      </h2>
+      <b>Android Chess</b> is a clone of chess built as an android app! It features the whole
+      game of chess, including all its traditional rules and moves, and a replay function that
+      allows players to watch one of the games they've played. It's one of the last academic projects I made
+      in college. In terms of development, I found that coding for android was quite simple!
+      Below is a screenshot of the simple UI, taken from Android Studio's emulator.
+      <br /><br />
+      <img
+        src="https://cdn.glitch.com/c0d074a0-0266-41a6-b342-880a495b9229%2FScreenshot%20(270).png?v=1589166785256"
+        alt="Android Chess"
+      />
+      <br /><br />
+    </div>
+
+    <div class="section content" id="Song-Lib">
+      <h2>
+        Song Library
+      </h2>
+      <b>Song Library</b> is a simple academic project implemented in a pair.
+      With Java and JavaFX, the user can add, delete, and edit songs into an
+      organized song library. <br /><br />
+      While this project was certainly not large or the first project I made UI
+      for, it is certainly a learning experience nonetheless! Below is a
+      screenshot of the UI, filled with placeholder song information.
+      <br /><br />
+      <img
+        src="https://cdn.glitch.com/c0d074a0-0266-41a6-b342-880a495b9229%2FScreenshot%20(230).png?v=1583206008990"
+        alt="Song Library"
+      />
+    </div>
+
+    <div class="footer bar">
+      <div class="left">
+        <b>April Denise D.</b>
+        <br />
+        software engineer // indie game developer // artist <br />
+        dancer
+      </div>
+      <div class="right">
+        <a href="mailto:admdizonn@gmail.com?Subject=Hello" target="_top"
+          >email</a
+        >
+        // <a href="https://github.com/aprildenise">github</a> //
+        <a href="https://twitter.com/march_mayjune">twitter</a>
+      </div>
+    </div>
+
+    <!-- include the Glitch button to show what the webpage is about and
+          to make it easier for folks to view source and remix -->
+    <div class="glitchButton" style="position:fixed;top:20px;right:20px;"></div>
+    <script src="https://button.glitch.me/button.js"></script>
+  </body>
+</html>
