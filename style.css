@@ -182,8 +182,11 @@ header .headerText {
 
 .box img {
   top: 0px;
-  width: 100%;
-  height: auto;
+}
+
+img .headerImg{
+  top: 0px;
+  width: 50%;
 }
 
 .box .text {
