@@ -11,6 +11,9 @@
 
     <!-- import the webpage's javascript file -->
     <script src="/script.js" defer></script>
+
+    <!-- import jQUERY-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   </head>
   <body>
     <nav>
@@ -25,58 +28,67 @@
             <a href="#Pathfinding">Pathfinding</a>
             <a href="#Bullet-Hell">Bullet-Hell</a>
             <a href="#Shoot-em-up">Shoot-'em-up</a>
-            <a href="#Chess">Chess</a>
-            <a href="#Song-Lib">Song-Library</a>
+            <a href="#Android">Chess</a>
+            <a href="#Photos">Photos</a>
           </div>
         </div>
       </div>
     </nav>
 
     <div class="section content" id="Pathfinding">
-      <div style="padding-top: 128px"></div>
-      <h2>
-        Semantic Pathfinding
-      </h2>
+      <h3>
+        Influence-based Pathfinding
+      </h3>
+      <img
+        class="headerImg"
+        src="https://cdn.glitch.com/c0d074a0-0266-41a6-b342-880a495b9229%2Fzones%20-%20side.png?v=1583207500040"
+      />
       <div class="caption">
-        <a href="https://github.com/aprildenise/Semantic-Pathfinding-Backups"
-          >Semantic pathfinding</a
-        >
-        is an algorithm I developed in my research, alongside a team of six
-        under the Rutgers Aresty Undergrad Research Program. It's created by
-        combining the techniques of hierarchical pathfinding, A*, and influence
-        maps.
-        <br /><br />
-        The image below is the virtual environment made in Unity used for the
-        study. It's a model of a hospital building. Each colored area is
-        considered a "zone." I used zones to create higher level searches for
-        A*, which result in hierarchical pathfinding.
-        <br /><br />
-        <img
-          src="https://cdn.glitch.com/c0d074a0-0266-41a6-b342-880a495b9229%2Fzones%20-%20side.png?v=1583207500040"
-          alt="Semantic Pathfinding Screenshot"
-        />
-        <br /><br />
-        My case study was crowd congestion, which is displayed in this image
-        below. An influence map is placed in the environment to quantify crowds
-        in the environment. With this map, new values are added to each agent's
-        pathfinding calculations. Visually, this makes the environment look like a heat
-        map, with red areas being more favorable. The result is a pathfinding
-        algorithm that not only finds the shortest path, but one that also
-        considers the dynamic stimuli of the agents, like noise, crowds,
-        visibility, etc. The disadvantages of this implementation is efficiency
-        though, since the pathfinding algorithm re-calculates paths for the
-        entire environment at each frame.
-        <br /><br />
-        <img
-          src="https://cdn.glitch.com/c0d074a0-0266-41a6-b342-880a495b9229%2Fvisitor%20crowd.png?v=1583207442335"
-          alt="Semantic Pathfinding Screenshot"
-        />
-        <br /><br />
-        In retrospective, this was my first experience working with a large team
-        in a professional setting! The study was an overall success, despite the
-        efficiency errors in the code. I not became more proficient with Unity
-        and C#, but I also learned soft skills pivotal for any leader or team
-        player. 🤗
+        <div id="overview">
+          <p>
+            Influence-based pathfinding is an algorithm I developed in my
+            research, alongside a team of six under the Rutgers Aresty Research
+            Program. It's created by combining the techniques of hierarchical
+            pathfinding, A*, and influence maps.
+          </p>
+        </div>
+        <p>
+          <b>The situation: </b>We wanted to create a pathfinding algorithm that
+          is better applicable to human environments. The problem with current
+          pathfinding algorithms is that they're static and generally based on
+          finding the shortest path from a start to a goal. Human environments
+          operate in opposing ways. Our environment is always changing due to
+          traffic and infrastructure, and we travel based on how we're feeling.
+          Maybe we want to avoid crowds? Maybe we want to take the scenic route?
+        </p>
+        <p>
+          My job was to implement the HPA* algorithm and make it more dynamic.
+          What's cool about HPA* is that it's best used for large environments,
+          much like our own world. After that, we added <i>influence maps</i> to
+          replicate human feelings and stimuli.
+        </p>
+        <p>
+          <b>The results: </b>The result was a working demo that simulates
+          humans that avoids crowd congestion. Here's a screenshot of that demo
+          below, with the influence maps visible in many colors, agents in dark
+          blue, and the path chosen in cyan. I even got to present these results
+          at a poster session for my program.
+          <img
+            src="https://cdn.glitch.com/c0d074a0-0266-41a6-b342-880a495b9229%2Fvisitor%20crowd.png?v=1583207442335"
+          />
+        </p>
+        <p>
+          Overall, this was an interesting experience, since this was the first
+          time I got to contribute something new to the field in a professional
+          setting. If I were to revisit this project, I would definitely fix the
+          efficiency of the project!
+        </p>
+        <p>
+          <b>See the code here: </b
+          ><a href="https://github.com/aprildenise/Semantic-Pathfinding-Backups"
+            >on Github!</a
+          >
+        </p>
       </div>
     </div>
 
@@ -84,89 +96,170 @@
       <h2>
         Untitled Bullet Hell Game
       </h2>
-      This unnamed
-      <a href="https://github.com/aprildenise/bullethell-game"
-        >Bullet hell game</a
-      >
-      is my current personal project, where I'm creating a video game in 100
-      Days, following the #100DaysOfGameDev challenge. You can follow my journey
-      and see more progress on my Twitter, as my knowledge for game development
-      and Unity continues to expand. The below .gif is an implementation of the
-      bullets in Unity, with different bullet paths, timings, and directions.
-      It's one of my first contributions to the challenge! 🙌🏼
-      <br /><br />
       <img
-        src="https://cdn.glitch.com/c0d074a0-0266-41a6-b342-880a495b9229%2Fday3.gif?v=1583205421963"
-        alt="Bullet hell"
+        class="headerImg"
+        src="https://cdn.glitch.com/c0d074a0-0266-41a6-b342-880a495b9229%2F04-28-20.jpg?v=1590088618107"
       />
-      <br /><br />
-      My fascination for the bullet hell genre comes from my love for the Touhou
-      series. Despite the difficulty of the series, their games have a way of
-      calming me down. 😎
+      <div class="caption">
+        <div class="overview">
+          <p>
+            This Untitiled Bullet Hell Game is my current project, as part of
+            the #100DaysOfGameDev challenge on Twitter. This video game is a
+            homage to the bullet hell genre, with a modern twist. I'm developing
+            this game solo through Unity.
+          </p>
+        </div>
+        <p>
+          <b>Follow my journey on:</b>
+          <a
+            href="https://twitter.com/search?q=from%3A%40march_mayjune&src=typed_query&f=live"
+          >
+            my twitter!</a
+          >
+          <b>See my code here: </b
+          ><a href="https://github.com/aprildenise/bullethell-game"
+            >on Github!</a
+          >
+        </p>
+      </div>
     </div>
 
     <div class="section content" id="Shoot-'em-up">
       <h2>
-        Shoot 'em Up Game
+        Shoot 'em Up Game: notes on crying
       </h2>
-      This
-      <a href="https://github.com/aprildenise/shootemup-game">shoot 'em up</a>
-      game, named
-      <a href="https://marchmayjune.itch.io/notes-on-crying"
-        >notes on crying,</a
-      >
-      is my first finished game and a personal project, inspired by the need for
-      more mental health themed games in the industry. It's availble on itch.io
-      to play, following the links.
-      <br /><br />
-      I attempted to make the development as quick as possible so that I can
-      learn programming skills quickly and move onto another project. Specifically, it was done
-      in 4 days, doing all
-      the designing, artwork, animations, sounds, and programming by myself. 🤘🏼 Sadly, the lack of time resulted in messy code and little
-      polish. I did learn the importance of planning though. Now, I love mapping out the systems of a coding project,
-      jotting down what they
-      need and how they interact with one another. 🥰
-      <br /><br />
-      Below is a .gif of the main character in the game.
-      <br /><br />
       <img
+        class="headerImg"
         src="https://cdn.glitch.com/c0d074a0-0266-41a6-b342-880a495b9229%2Fnotes%20on%20crying%20cries.gif?v=1583205768577"
-        alt="Shoot 'em up game'"
       />
+      <div class="caption">
+        <div class="overview">
+          <p>
+            This short video game was the first video game I've ever created and
+            deployed! Like my Untitled Bullet Hell Game, this is another homage
+            to the bullet hell genre, but in small doses to explore mental
+            health in video games.
+          </p>
+        </div>
+        <p>
+          <b>The situation: </b>Mental health in video games is one of my
+          favorite topics. As someone struggling with my own mental health
+          issues, I care deeply about opening the dialogue about it. I find that
+          one of the best ways I can contribute to that movement is by making
+          games that addresses it. Video games are an interesting medium such
+          that they're interactive, unlike most media like movies or visuals. We
+          can present a stronger message to the audience because of this
+          interactivity.
+        </p>
+        <p>
+          Since this was my first game, I attempted to make it as quickly as
+          possible. This way, I can learn the most about video game development
+          without overwhelming myself with work. The game features a little
+          character, who is crying alone. The player can deal with this
+          situation in various ways, such as crying it out, or reaching out to
+          someone. My hope is that players get to learn more about how people
+          deal with their mental health. Hence a small "note on crying."
+        </p>
+        <p>
+          <b>The results: </b> I ultimately finished this game within 4 days.
+          It's a very short game, and can be finished within minutes. This was
+          quite hectic though! Everything is basically held by sticks and
+          strings. I learned the importance of project planning however. If I
+          were to redo this game, then I would spend more time planning it. Now,
+          project planning is one of my favorite steps of my projects! I hope to
+          make more games about mental health in the future.
+        </p>
+        <p>
+          <b>Play the game here: </b
+          ><a href="https://marchmayjune.itch.io/notes-on-crying">on itchio!</a>
+          <b>See the code here: </b
+          ><a href="https://github.com/aprildenise/shootemup-game">
+            on Github again!</a
+          >
+        </p>
+      </div>
     </div>
 
-    <div class="section content" id="Chess">
+    <div class="section content" id="Android">
       <h2>
         Android Chess
       </h2>
-      <b>Android Chess</b> is a clone of chess built as an android app! It features the whole
-      game of chess, including all its traditional rules and moves, and a replay function that
-      allows players to watch one of the games they've played. It's one of the last academic projects I made
-      in college. In terms of development, I found that coding for android was quite simple!
-      Below is a screenshot of the simple UI, taken from Android Studio's emulator.
-      <br /><br />
       <img
-        src="https://cdn.glitch.com/c0d074a0-0266-41a6-b342-880a495b9229%2FScreenshot%20(270).png?v=1589166785256"
-        alt="Android Chess"
+        class="headerImg"
+        src="https://cdn.glitch.com/c0d074a0-0266-41a6-b342-880a495b9229%2Fc0d074a0-0266-41a6-b342-880a495b9229_Screenshot%20(270).png?v=1590167283119"
       />
-      <br /><br />
+      <div class="caption">
+        <div class="overview">
+          <p>
+            This was an academic project developed in a pair. The goal was to
+            make a clone of chess, but as an Android app.
+          </p>
+        </div>
+        <p>
+          <b>The situation: </b>This project was assigned as we were learning
+          about design patterns in OOP. So, the full task was to make a clone of
+          chess, but also used what we've learned to make the app more efficient
+          for the user and the programmer. Another interesting feature we were
+          tasked to add was to make a replay feature. This way, players can save
+          their game and review the moves that they made during the game.
+        </p>
+        <p>
+          <b>The results: </b> Just as you expect, a working app - simple, but
+          functional! I found that working with Android and Android Studio was
+          actually easy The UI and serialization in Android are very similar to
+          those in Java, a language I'm fluent in. Also, we didn't find the need
+          to implement a lot of design patterns, If I were to revisit this
+          project though, I would still attempt to implement them regardless.
+          This is because, at the very least, all screens can return to previous
+          screens and can exit the app. That kind of functionality, though
+          small, can still be shared efficiently. I would also added some polish
+          to make the game more exciting, such as by including animations. I'm a
+          indie game developer after all! I'd love to work more with apps in Android!
+        </p>
+        <p>
+          <b>See the code here: </b
+          ><a href="https://github.com/aprildenise/android-chess">
+            ....on Github again.</a
+          >
+        </p>
+      </div>
     </div>
 
-    <div class="section content" id="Song-Lib">
+    <div class="section content" id="Photos">
       <h2>
-        Song Library
+        Photo Library
       </h2>
-      <b>Song Library</b> is a simple academic project implemented in a pair.
-      With Java and JavaFX, the user can add, delete, and edit songs into an
-      organized song library. <br /><br />
-      While this project was certainly not large or the first project I made UI
-      for, it is certainly a learning experience nonetheless! Below is a
-      screenshot of the UI, filled with placeholder song information.
-      <br /><br />
       <img
-        src="https://cdn.glitch.com/c0d074a0-0266-41a6-b342-880a495b9229%2FScreenshot%20(230).png?v=1583206008990"
-        alt="Song Library"
+        class="headerImg"
+        src="https://cdn.glitch.com/c0d074a0-0266-41a6-b342-880a495b9229%2Fe0be382e770d873f0ef4633a0a760900_resize.png?v=1590166503155"
       />
+      <div class="caption">
+        <div class="overview">
+          <p>
+            This was another academic project, again built in a pair. This time,
+            the goal was to create a photo library from scratch, with JavaFX.
+          </p>
+        </div>
+        <p>
+          <b>The situation: </b>Much like for the Android project above, this
+          project was meant to teach us about design patterns. The main
+          functions of this app included, but was not limited to: a simple login
+          system, loading photos from anywhere on the device into the app,
+          tagging photos, and searching for photos based on those tags.
+        </p>
+        <p>
+          <b>The results: </b>Another working app! Unlike the Android project,
+          this project would have benefitted from design patterns. I did not
+          take advantage of them as I should have. If given the time, I would
+          most likely redo the entire architecture of this project!
+        </p>
+        <p>
+          <b>See the code here: </b
+          ><a href="https://github.com/aprildenise/photos">
+            ....on Github again...!</a
+          >
+        </p>
+      </div>
     </div>
 
     <div class="footer bar">
