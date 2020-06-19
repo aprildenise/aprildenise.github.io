@@ -180,6 +180,10 @@ header .headerText {
   margin-top: 15%;
 }
 
+.twitterbox {
+  width: auto;
+}
+
 .box img {
   top: 0px;
 }

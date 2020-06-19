@@ -4,6 +4,7 @@ $(function() {
     var numProjects = 5;
 
     var projects = $.find("#projects")[0].children[1].children; //get the box container that has all the projects
+    if (projects == null) return;
 
     var i;
     var j = 0;
