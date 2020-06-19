@@ -3,9 +3,13 @@ $(function() {
     // Not the most efficient :(
     var numProjects = 5;
 
-    var projects = $.find("#projects")[0].children[1].children; //get the box container that has all the projects
-    if (projects == null) return;
-
+    try{
+      var projects = $.find("#projects")[0].children[1].children; //get the box container that has all the projects
+    }
+    catch(err){
+      return
+    } 
+    
     var i;
     var j = 0;
     for (i = 1; i <= numProjects; i++) {
